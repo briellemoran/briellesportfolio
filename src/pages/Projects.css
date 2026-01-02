@@ -3,6 +3,11 @@
   padding: 8rem 2rem 4rem 2rem; /* top padding accounts for fixed navbar */
   max-width: 1400px;
   margin: 0 auto;
+  background-image: url('/backgroundStars.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .projects-title {
