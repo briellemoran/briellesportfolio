@@ -26,27 +26,29 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projects-page">
-      <h1 className="projects-title">Projects</h1>
-      
-      <div className="projects-list">
-        {projects.map((project, index) => (
-          <div key={index} className="project-block">
-            <div className="project-content">
-              <h2>{project.title}</h2>
-              <p className="project-description">{project.description}</p>
-              <p className="project-tech"><strong>Built with:</strong> {project.tech}</p>
-              {project.link && (
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                  View Project →
-                </a>
-              )}
+    <div className="projects-background">
+      <div className="projects-page">
+        <h1 className="projects-title">Projects</h1>
+        
+        <div className="projects-list">
+          {projects.map((project, index) => (
+            <div key={index} className="project-block">
+              <div className="project-content">
+                <h2>{project.title}</h2>
+                <p className="project-description">{project.description}</p>
+                <p className="project-tech"><strong>Built with:</strong> {project.tech}</p>
+                {project.link && (
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                    View Project →
+                  </a>
+                )}
+              </div>
+              <div className="project-image">
+                <img src={project.image} alt={project.title} />
+              </div>
             </div>
-            <div className="project-image">
-              <img src={project.image} alt={project.title} />
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
