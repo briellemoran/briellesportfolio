@@ -4,7 +4,7 @@
   align-items: center;
   min-height: 100vh;
   width: 100%;
-  background-image: url('/your-background.jpg'); /* add your background image path */
+  background-image: url('/backgroundStars.png'); /* add your background image path */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
