@@ -1,0 +1,92 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 100;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+.logo {
+    height: 60px;
+    max-height: 60px;
+    width: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.9));
+}
+
+.logo-link:hover .logo {
+    opacity: 0.6;
+    filter: drop-shadow(#fc51e5 0 6px 12px);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Inter", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 600 !important;
+    font-style: normal;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+    filter: drop-shadow(0 6px 12px rgba(4, 4, 4, 0.9));
+}
+
+.nav-link:hover {
+    color: #fc51e5 !important;
+    filter: drop-shadow(#fc51e5 0 6px 12px);
+}
+
+.social-icon {
+    font-size: 25px;
+    color: #000000;
+    transition: color 0.3s ease;
+    filter: drop-shadow(0 8px 15px rgb(0, 0, 0));
+}
+
+.social-link:hover .social-icon {
+    color: #fc51e5;
+    filter: drop-shadow(0 8px 15px #fc51e5);
+}
+
+/* responsive design for phone */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
+  
+  .navbar-left {
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,66 @@
+.home-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('/your-background.jpg'); /* add your background image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.home-logo {
+  max-width: 600px;
+  width: 80%;
+  height: auto;
+}
+
+.home-intro {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.intro-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.intro-content h2 {
+  font-family: "Source Serif 4", serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.intro-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: black;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .home-logo {
+    max-width: 400px;
+    width: 90%;
+  }
+
+  .intro-content h2 {
+    font-size: 2rem;
+  }
+
+  .intro-content p {
+    font-size: 1rem;
+  }
+
+  .home-intro {
+    padding: 2rem 1rem;
+  }
+}
