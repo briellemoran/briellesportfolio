@@ -47,6 +47,11 @@
 
 /* responsive */
 @media (max-width: 768px) {
+  .home-hero {
+    background-position: center center;
+    background-attachment: scroll;
+  }
+
   .home-logo {
     max-width: 400px;
     width: 90%;
