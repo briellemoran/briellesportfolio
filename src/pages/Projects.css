@@ -140,6 +140,7 @@
 @media (max-width: 768px) {
   .projects-background {
     background-attachment: scroll;
+    background-position: center center;
   }
 
   .projects-page {
