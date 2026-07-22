@@ -40,33 +40,35 @@ const Projects = () => {
   ];
 
   return (
-    <div className="projects-page">
-      <h1 className="projects-title">Projects</h1>
-      <div className="projects-list">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="project-card"
-            onClick={() => navigate(project.link)}
-          >
-            <div className="project-hero">
-              <img src={project.image} alt={project.title} className="project-hero-img" />
-              <div className="project-hero-overlay" />
-              <div className="project-hero-text">
-                <h2>{project.title}</h2>
-                <span className="project-date">{project.date}</span>
+    <div className = "projects-background">
+      <div className="projects-page">
+        <h1 className="projects-title">Projects</h1>
+        <div className="projects-list">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="project-card"
+              onClick={() => navigate(project.link)}
+            >
+              <div className="project-hero">
+                <img src={project.image} alt={project.title} className="project-hero-img" />
+                <div className="project-hero-overlay" />
+                <div className="project-hero-text">
+                  <h2>{project.title}</h2>
+                  <span className="project-date">{project.date}</span>
+                </div>
+              </div>
+              <div className="project-body">
+                <p className="project-description">{project.description}</p>
+                <div className="project-tags">
+                  {project.tech.map((t, i) => (
+                    <span key={i} className="project-tag">{t}</span>
+                  ))}
+                </div>
               </div>
             </div>
-            <div className="project-body">
-              <p className="project-description">{project.description}</p>
-              <div className="project-tags">
-                {project.tech.map((t, i) => (
-                  <span key={i} className="project-tag">{t}</span>
-                ))}
-              </div>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
