@@ -1,6 +1,6 @@
 .projects-background {
   min-height: 100vh;
-  background-image: url('/backgroundStars.png');
+  /*background-image: url('/backgroundStars.png');*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
