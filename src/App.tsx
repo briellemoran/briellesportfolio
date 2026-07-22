@@ -35,7 +35,6 @@ function App() {
             <div className="home-faq">
               <div className="faq-content">
                 <h2 className="faq-title">Things you might be wondering</h2>
-                <p className="faq-subtitle">or maybe just what I hope you'll ask</p>
                 <div className="faq-list">
                   <div className="faq-item">
                     <h3>Why BAM?</h3>
