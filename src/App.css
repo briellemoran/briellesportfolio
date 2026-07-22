@@ -133,6 +133,10 @@
     padding: 2rem 1rem;
   }
 
+  .divider {
+    padding: 2rem 0rem;
+  }
+
   .faq-title {
     font-size: 1.8rem;
   }
