@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.8rem 2rem;
     background-color: transparent;
     position: fixed;
     top: 0;
@@ -39,7 +39,6 @@
     width: auto;
     display: block;
     transition: opacity 0.3s ease;
-    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.9));
 }
 
 .logo-link:hover .logo {
@@ -56,24 +55,20 @@
     font-style: normal;
     font-size: 1rem;
     transition: color 0.2s ease;
-    filter: drop-shadow(0 6px 12px rgba(4, 4, 4, 0.9));
 }
 
 .nav-link:hover {
     color: #fc51e5 !important;
-    filter: drop-shadow(#fc51e5 0 6px 12px);
 }
 
 .social-icon {
     font-size: 25px;
     color: #000000;
     transition: color 0.3s ease;
-    filter: drop-shadow(0 8px 15px rgb(0, 0, 0));
 }
 
 .social-link:hover .social-icon {
     color: #fc51e5;
-    filter: drop-shadow(0 8px 15px #fc51e5);
 }
 
 .navbar-scrolled {
