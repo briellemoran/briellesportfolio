@@ -1,16 +1,31 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+
+  /*
+   * when scrolled down more than 12px, then add the white background to the nav
+   */
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 120);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="navbar-left">
-        <a href="/" className="logo-link">
+        <Link to="/" className="logo-link">
           <img src="/BAM.png" alt="Logo" className="logo" />
-        </a>
-        <Link to="/projects" className="nav-link">PROJECTS</Link>
-        <Link to="/redbubble" className="nav-link">REDBUBBLE</Link>
+        </Link>
+        <Link to="/projects" className={`nav-link ${location.pathname === '/projects' ? 'nav-link-active' : ''}`}>PROJECTS</Link>
+        <Link to="/redbubble" className={`nav-link ${location.pathname === '/redbubble' ? 'nav-link-active' : ''}`}>REDBUBBLE</Link>
       </div>
       
       <div className="navbar-right">
