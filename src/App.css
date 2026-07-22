@@ -34,7 +34,7 @@
 .intro-content h2 {
   font-family: "Source Serif 4", serif;
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   color: black;
 }
 
@@ -49,6 +49,24 @@
   max-width: 500px;
   width: 80%;
   height: auto;
+}
+
+.intro-tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.intro-tag {
+  padding: 4px 16px;
+  background: rgba(255, 98, 234, 0.15);
+  border: 0.5px solid rgba(255, 98, 234, 0.4);
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #ff62ea;
 }
 
 .divider {

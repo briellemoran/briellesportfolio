@@ -18,6 +18,11 @@ function App() {
               <div className="intro-content">
                 <img src="/profile.png" alt="profile" className="profile-drawing" />
                 <h2>Hi, I'm Brielle!</h2>
+                <div className="intro-tags">
+                  <span className="intro-tag">Developer</span>
+                  <span className="intro-tag">Designer</span>
+                  <span className="intro-tag">Creator</span>
+                </div>
                 <p>
                   I've always been driven by curiosity and creativity, which has led to a constant need to be creating and problem-solving. 
                   I'm currently majoring in Computer Science & Design with a minor in Business where I'm focusing on UI/UX design. 
