@@ -16,14 +16,30 @@ function App() {
             </div>
             <div className="home-intro">
               <div className="intro-content">
-                <h2>Welcome to my Portfolio!</h2>
+                <img src="/profile.png" alt="profile" className="profile-drawing" />
+                <h2>Hi, I'm Brielle!</h2>
                 <p>
-                  Hi, I'm Brielle Moran! I've always been driven by curiosity and creativity, 
-                  which has led to a constant need to be creating and problem-solving. Currently, 
-                  I'm majoring in Computer Science & Design with a minor in Business, where I'm focusing on UI/UX design. 
+                  I've always been driven by curiosity and creativity, which has led to a constant need to be creating and problem-solving. 
+                  I'm currently majoring in Computer Science & Design with a minor in Business where I'm focusing on UI/UX design. 
                   I love bridging the gap between design and functional code, whether that's building full-stack applications, 
                   designing brand identities, or creating digital art.
                 </p>
+              </div>
+            </div>
+            <img src="/divider.png" alt="divider" className="divider" />
+            <div className="home-faq">
+              <div className="faq-content">
+                <h2 className="faq-title">Things you might be wondering</h2>
+                <div className="faq-list">
+                  <div className="faq-item">
+                    <h3>Why BAM?</h3>
+                    <p>BAM are my initials! I didn't just think it sounded cool… (well, maybe a little).</p>
+                  </div>
+                  <div className="faq-item">
+                    <h3>How did you build this website?</h3>
+                    <p>I built this site using React, so it's written in TypeScript and styled in CSS. The drawings are my own that I made separately and embedded throughout.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </>

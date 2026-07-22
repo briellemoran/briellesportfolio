@@ -83,7 +83,7 @@
     text-underline-offset: 4px;
 }
 
-/* responsive design for phone */
+/* adapt for phone */
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem;

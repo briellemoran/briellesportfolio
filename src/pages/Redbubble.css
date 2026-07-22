@@ -102,7 +102,7 @@
   display: block;
 }
 
-/* responsive */
+/* for phone */
 @media (max-width: 768px) {
   .redbubble-page {
     padding: 6rem 1rem 2rem 1rem;
