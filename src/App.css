@@ -122,6 +122,34 @@
   color: #555;
 }
 
+.footer {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+  border-top: 0.5px solid #e0e0e0;
+}
+
+.footer p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+.footer-name {
+  color: #555;
+  font-weight: 500;
+}
+
+.footer-divider {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* for phone */
 @media (max-width: 768px) {
   .home-hero {

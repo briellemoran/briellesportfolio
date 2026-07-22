@@ -35,6 +35,7 @@ function App() {
             <div className="home-faq">
               <div className="faq-content">
                 <h2 className="faq-title">Things you might be wondering</h2>
+                <p className="faq-subtitle">or maybe just what I hope you'll ask</p>
                 <div className="faq-list">
                   <div className="faq-item">
                     <h3>Why BAM?</h3>
@@ -52,6 +53,11 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/redbubble" element={<Redbubble />} />
       </Routes>
+      <footer className="footer">
+        <img src="/BAM.png" alt="divider" className="footer-divider" />
+        <p>designed & built by <span className="footer-name">Brielle Moran</span></p>
+        <p>© 2025</p>
+      </footer>
     </Router>
   );
 }
