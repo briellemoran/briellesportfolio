@@ -33,10 +33,13 @@
 .project-card {
   border-radius: 12px;
   overflow: hidden;
-  border: 0.5px solid #e0e0e0;
+  /*border: 0.5px solid #e0e0e0;*/
   background: #fff;
   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid rgba(255, 98, 234, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(255, 98, 234, 0.1);
+
 }
 
 .project-card:hover {
@@ -64,7 +67,7 @@
   height: 100%;
   object-fit: cover;
   transition: filter 0.25s ease;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
 }
 
 .project-hero-overlay {
