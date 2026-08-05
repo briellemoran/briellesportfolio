@@ -26,7 +26,7 @@ const Projects = () => {
       date: "Sep - Nov 2025",
       description: "A wardrobe styling app that helps you generate outfits from your closet.",
       tech: ["React Native", "TypeScipt", "HTML", "CSS", "Adobe Illustrator"],
-      link: "/projects/dressyourself",
+      link: "https://docs.google.com/presentation/d/1azef02ch9A8mLqzjUeETzDhqEr1g3h9OUlr2k_fSQtU/edit?usp=sharing",
       image: "/dressyourself.png"
     },
     {
@@ -34,7 +34,7 @@ const Projects = () => {
       date: "Jan - Apr 2025",
       description: "A budget-focused travel planning application that generates travel itineraries.",
       tech: ["Figma", "Adobe Illustrator"],
-      link: "/projects/voyagers",
+      link: "https://www.linkedin.com/posts/brielle-moran_im-excited-to-announce-that-my-co-founder-activity-7316540169153572864-A60s?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFGS82oBfS-MzC4RAFl4tDhn1BeA6dEdq2s",
       image: "/voyagers.png"
     }
   ];
